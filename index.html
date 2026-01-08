@@ -1,68 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Website</title>
+  <meta name="description" content="A simple, clean, and safe website example.">
 
-  <!-- Basic SEO & Trust -->
-  <title>Secure Simple Website</title>
-  <meta name="description" content="A simple and secure example website built with clean HTML and Tailwind CSS.">
+  <!-- Basic security -->
+  <meta name="referrer" content="no-referrer">
 
-  <!-- Security: Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy"
-        content="
-        default-src 'self';
-        img-src 'self' https://images.unsplash.com;
-        style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
-        script-src 'self' https://cdn.tailwindcss.com;
-        ">
-
-  <!-- Security: Referrer control -->
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <!-- Tailwind (trusted CDN only) -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-50 min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="bg-white border-b px-6 py-4 flex justify-between items-center">
-    <h1 class="text-lg font-semibold text-gray-800">
-      SecureSite
+  <header class="bg-white border-b px-6 py-4">
+    <h1 class="text-xl font-semibold text-gray-800">
+      My Website
     </h1>
-
-    <nav class="space-x-4 text-sm">
-      <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
-      <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
-      <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
-    </nav>
   </header>
 
-  <!-- Main -->
+  <!-- Main content -->
   <main class="flex-1 flex items-center justify-center px-6">
-    <div class="max-w-xl text-center bg-white p-8 rounded-lg shadow">
+    <div class="bg-white p-8 rounded-lg shadow max-w-md text-center">
       <h2 class="text-2xl font-medium text-gray-800 mb-4">
-        Simple. Secure. Clean.
+        Welcome
       </h2>
 
       <p class="text-gray-600 mb-6">
-        This is a minimal example of a secure static website using
-        modern browser protections and clean structure.
+        This is a simple, error-free website built using clean HTML.
+        It is safe, readable, and easy to maintain.
       </p>
 
       <a href="#"
-         class="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        Learn More
+         class="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
+        Get Started
       </a>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 text-sm text-gray-600 px-6 py-4 text-center border-t">
-    © 2026 SecureSite. Privacy-first design.
+  <footer class="bg-gray-100 border-t text-sm text-gray-600 text-center py-4">
+    © 2026 My Website. All rights reserved.
   </footer>
 
 </body>
